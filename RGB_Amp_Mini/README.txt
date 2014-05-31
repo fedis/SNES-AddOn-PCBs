@@ -1,16 +1,9 @@
 Solder Joints:
 
-<<<<<<< HEAD
   R - red image component from S-CPUN pin156
   G - green image component from S-CPUN pin157
   B - blue image component from S-CPUN pin158
 /CS - composite sync from S-CPUN pin151
-=======
-R - red image component from S-CPUN pin156
-G - green image component from S-CPUN pin157
-B - blue image component from S-CPUN pin158
-/CS - composite sync from S-CPUN pin 151
->>>>>>> 15f386451d4754940f0fdd8a1d3e0871ca3bec3d
 
 solder PCB directly beneath the MultiAV
 deactivate the RGB-output of S-RGB by lifting pin20, 22 and 24 from mainboard
