@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.3125" altunitdist="mm" altunit="mm"/>
+<grid distance="1.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.156125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -285,68 +285,68 @@
 <rectangle x1="-30" y1="-5.1" x2="30" y2="3.1" layer="30"/>
 </package>
 <package name="SNESCART_CONN">
-<pad name="16" x="-3.4375" y="0" drill="1" shape="square"/>
-<pad name="17" x="-3.4375" y="2.5" drill="1" shape="square"/>
-<pad name="18" x="-3.4375" y="5" drill="1" shape="square"/>
-<pad name="19" x="-3.4375" y="7.5" drill="1" shape="square"/>
-<pad name="20" x="-3.4375" y="10" drill="1" shape="square"/>
-<pad name="15" x="-3.4375" y="-2.5" drill="1" shape="square"/>
-<pad name="14" x="-3.4375" y="-5" drill="1" shape="square"/>
-<pad name="13" x="-3.4375" y="-7.5" drill="1" shape="square"/>
-<pad name="12" x="-3.4375" y="-10" drill="1" shape="square"/>
-<pad name="11" x="-3.4375" y="-12.5" drill="1" shape="square"/>
-<pad name="10" x="-3.4375" y="-15" drill="1" shape="square"/>
-<pad name="9" x="-3.4375" y="-17.5" drill="1" shape="square"/>
-<pad name="8" x="-3.4375" y="-20" drill="1" shape="square"/>
-<pad name="21" x="-3.4375" y="12.5" drill="1" shape="square"/>
-<pad name="22" x="-3.4375" y="15" drill="1" shape="square"/>
-<pad name="23" x="-3.4375" y="17.5" drill="1" shape="square"/>
-<pad name="24" x="-3.4375" y="20" drill="1" shape="square"/>
-<pad name="25" x="-3.4375" y="22.5" drill="1" shape="square"/>
-<pad name="7" x="-3.4375" y="-22.5" drill="1" shape="square"/>
-<pad name="6" x="-3.4375" y="-25" drill="1" shape="square"/>
-<pad name="5" x="-3.4375" y="-27.5" drill="1" shape="square"/>
-<pad name="27" x="-3.4375" y="27.5" drill="1" shape="square"/>
-<pad name="26" x="-3.4375" y="25" drill="1" shape="square"/>
-<pad name="28" x="-3.4375" y="35" drill="1" shape="square"/>
-<pad name="29" x="-3.4375" y="37.5" drill="1" shape="square"/>
-<pad name="30" x="-3.4375" y="40" drill="1" shape="square"/>
-<pad name="31" x="-3.4375" y="42.5" drill="1" shape="square"/>
-<pad name="4" x="-3.4375" y="-35" drill="1" shape="square"/>
-<pad name="3" x="-3.4375" y="-37.5" drill="1" shape="square"/>
-<pad name="2" x="-3.4375" y="-40" drill="1" shape="square"/>
-<pad name="1" x="-3.4375" y="-42.5" drill="1" shape="square"/>
-<pad name="47" x="3.4375" y="0" drill="1" shape="square" rot="R180"/>
-<pad name="46" x="3.4375" y="-2.5" drill="1" shape="square" rot="R180"/>
-<pad name="45" x="3.4375" y="-5" drill="1" shape="square" rot="R180"/>
-<pad name="44" x="3.4375" y="-7.5" drill="1" shape="square" rot="R180"/>
-<pad name="43" x="3.4375" y="-10" drill="1" shape="square" rot="R180"/>
-<pad name="48" x="3.4375" y="2.5" drill="1" shape="square" rot="R180"/>
-<pad name="49" x="3.4375" y="5" drill="1" shape="square" rot="R180"/>
-<pad name="50" x="3.4375" y="7.5" drill="1" shape="square" rot="R180"/>
-<pad name="51" x="3.4375" y="10" drill="1" shape="square" rot="R180"/>
-<pad name="52" x="3.4375" y="12.5" drill="1" shape="square" rot="R180"/>
-<pad name="53" x="3.4375" y="15" drill="1" shape="square" rot="R180"/>
-<pad name="54" x="3.4375" y="17.5" drill="1" shape="square" rot="R180"/>
-<pad name="55" x="3.4375" y="20" drill="1" shape="square" rot="R180"/>
-<pad name="42" x="3.4375" y="-12.5" drill="1" shape="square" rot="R180"/>
-<pad name="41" x="3.4375" y="-15" drill="1" shape="square" rot="R180"/>
-<pad name="40" x="3.4375" y="-17.5" drill="1" shape="square" rot="R180"/>
-<pad name="39" x="3.4375" y="-20" drill="1" shape="square" rot="R180"/>
-<pad name="38" x="3.4375" y="-22.5" drill="1" shape="square" rot="R180"/>
-<pad name="56" x="3.4375" y="22.5" drill="1" shape="square" rot="R180"/>
-<pad name="57" x="3.4375" y="25" drill="1" shape="square" rot="R180"/>
-<pad name="58" x="3.4375" y="27.5" drill="1" shape="square" rot="R180"/>
-<pad name="36" x="3.4375" y="-27.5" drill="1" shape="square" rot="R180"/>
-<pad name="37" x="3.4375" y="-25" drill="1" shape="square" rot="R180"/>
-<pad name="35" x="3.4375" y="-35" drill="1" shape="square" rot="R180"/>
-<pad name="34" x="3.4375" y="-37.5" drill="1" shape="square" rot="R180"/>
-<pad name="33" x="3.4375" y="-40" drill="1" shape="square" rot="R180"/>
-<pad name="32" x="3.4375" y="-42.5" drill="1" shape="square" rot="R180"/>
-<pad name="59" x="3.4375" y="35" drill="1" shape="square" rot="R180"/>
-<pad name="60" x="3.4375" y="37.5" drill="1" shape="square" rot="R180"/>
-<pad name="61" x="3.4375" y="40" drill="1" shape="square" rot="R180"/>
-<pad name="62" x="3.4375" y="42.5" drill="1" shape="square" rot="R180"/>
+<pad name="16" x="-3.6" y="0" drill="1" shape="square"/>
+<pad name="17" x="-3.6" y="2.5" drill="1" shape="square"/>
+<pad name="18" x="-3.6" y="5" drill="1" shape="square"/>
+<pad name="19" x="-3.6" y="7.5" drill="1" shape="square"/>
+<pad name="20" x="-3.6" y="10" drill="1" shape="square"/>
+<pad name="15" x="-3.6" y="-2.5" drill="1" shape="square"/>
+<pad name="14" x="-3.6" y="-5" drill="1" shape="square"/>
+<pad name="13" x="-3.6" y="-7.5" drill="1" shape="square"/>
+<pad name="12" x="-3.6" y="-10" drill="1" shape="square"/>
+<pad name="11" x="-3.6" y="-12.5" drill="1" shape="square"/>
+<pad name="10" x="-3.6" y="-15" drill="1" shape="square"/>
+<pad name="9" x="-3.6" y="-17.5" drill="1" shape="square"/>
+<pad name="8" x="-3.6" y="-20" drill="1" shape="square"/>
+<pad name="21" x="-3.6" y="12.5" drill="1" shape="square"/>
+<pad name="22" x="-3.6" y="15" drill="1" shape="square"/>
+<pad name="23" x="-3.6" y="17.5" drill="1" shape="square"/>
+<pad name="24" x="-3.6" y="20" drill="1" shape="square"/>
+<pad name="25" x="-3.6" y="22.5" drill="1" shape="square"/>
+<pad name="7" x="-3.6" y="-22.5" drill="1" shape="square"/>
+<pad name="6" x="-3.6" y="-25" drill="1" shape="square"/>
+<pad name="5" x="-3.6" y="-27.5" drill="1" shape="square"/>
+<pad name="27" x="-3.6" y="27.5" drill="1" shape="square"/>
+<pad name="26" x="-3.6" y="25" drill="1" shape="square"/>
+<pad name="28" x="-3.6" y="35" drill="1" shape="square"/>
+<pad name="29" x="-3.6" y="37.5" drill="1" shape="square"/>
+<pad name="30" x="-3.6" y="40" drill="1" shape="square"/>
+<pad name="31" x="-3.6" y="42.5" drill="1" shape="square"/>
+<pad name="4" x="-3.6" y="-35" drill="1" shape="square"/>
+<pad name="3" x="-3.6" y="-37.5" drill="1" shape="square"/>
+<pad name="2" x="-3.6" y="-40" drill="1" shape="square"/>
+<pad name="1" x="-3.6" y="-42.5" drill="1" shape="square"/>
+<pad name="47" x="3.6" y="0" drill="1" shape="square" rot="R180"/>
+<pad name="46" x="3.6" y="-2.5" drill="1" shape="square" rot="R180"/>
+<pad name="45" x="3.6" y="-5" drill="1" shape="square" rot="R180"/>
+<pad name="44" x="3.6" y="-7.5" drill="1" shape="square" rot="R180"/>
+<pad name="43" x="3.6" y="-10" drill="1" shape="square" rot="R180"/>
+<pad name="48" x="3.6" y="2.5" drill="1" shape="square" rot="R180"/>
+<pad name="49" x="3.6" y="5" drill="1" shape="square" rot="R180"/>
+<pad name="50" x="3.6" y="7.5" drill="1" shape="square" rot="R180"/>
+<pad name="51" x="3.6" y="10" drill="1" shape="square" rot="R180"/>
+<pad name="52" x="3.6" y="12.5" drill="1" shape="square" rot="R180"/>
+<pad name="53" x="3.6" y="15" drill="1" shape="square" rot="R180"/>
+<pad name="54" x="3.6" y="17.5" drill="1" shape="square" rot="R180"/>
+<pad name="55" x="3.6" y="20" drill="1" shape="square" rot="R180"/>
+<pad name="42" x="3.6" y="-12.5" drill="1" shape="square" rot="R180"/>
+<pad name="41" x="3.6" y="-15" drill="1" shape="square" rot="R180"/>
+<pad name="40" x="3.6" y="-17.5" drill="1" shape="square" rot="R180"/>
+<pad name="39" x="3.6" y="-20" drill="1" shape="square" rot="R180"/>
+<pad name="38" x="3.6" y="-22.5" drill="1" shape="square" rot="R180"/>
+<pad name="56" x="3.6" y="22.5" drill="1" shape="square" rot="R180"/>
+<pad name="57" x="3.6" y="25" drill="1" shape="square" rot="R180"/>
+<pad name="58" x="3.6" y="27.5" drill="1" shape="square" rot="R180"/>
+<pad name="36" x="3.6" y="-27.5" drill="1" shape="square" rot="R180"/>
+<pad name="37" x="3.6" y="-25" drill="1" shape="square" rot="R180"/>
+<pad name="35" x="3.6" y="-35" drill="1" shape="square" rot="R180"/>
+<pad name="34" x="3.6" y="-37.5" drill="1" shape="square" rot="R180"/>
+<pad name="33" x="3.6" y="-40" drill="1" shape="square" rot="R180"/>
+<pad name="32" x="3.6" y="-42.5" drill="1" shape="square" rot="R180"/>
+<pad name="59" x="3.6" y="35" drill="1" shape="square" rot="R180"/>
+<pad name="60" x="3.6" y="37.5" drill="1" shape="square" rot="R180"/>
+<pad name="61" x="3.6" y="40" drill="1" shape="square" rot="R180"/>
+<pad name="62" x="3.6" y="42.5" drill="1" shape="square" rot="R180"/>
 <text x="-2.5" y="43.4375" size="1.016" layer="21" font="vector" ratio="12" rot="R270">31</text>
 <text x="2.5" y="41.5625" size="1.016" layer="21" font="vector" ratio="12" rot="R90">62</text>
 <text x="-2.5" y="35.9375" size="1.016" layer="21" font="vector" ratio="12" rot="R270">28</text>
@@ -367,16 +367,16 @@
 <text x="2.5" y="-5.9375" size="1.016" layer="21" font="vector" ratio="12" rot="R90">45</text>
 <text x="2.5" y="6.5625" size="1.016" layer="21" font="vector" ratio="15" rot="R90">50</text>
 <text x="2.5" y="19.0625" size="1.016" layer="21" font="vector" ratio="12" rot="R90">55</text>
-<wire x1="4.6875" y1="43.125" x2="4.6875" y2="-43.125" width="0.127" layer="21"/>
 <text x="-5" y="45" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="0.6625" y="1.25" size="1.27" layer="27" font="vector" ratio="10" rot="R90">&gt;VALUE</text>
-<wire x1="-4.0625" y1="43.75" x2="4.0625" y2="43.75" width="0.127" layer="21"/>
-<wire x1="4.0625" y1="43.75" x2="4.6875" y2="43.125" width="0.127" layer="21" curve="-90"/>
-<wire x1="4.6875" y1="-43.125" x2="4.0625" y2="-43.75" width="0.127" layer="21" curve="-90"/>
-<wire x1="4.0625" y1="-43.75" x2="-4.0625" y2="-43.75" width="0.127" layer="21"/>
-<wire x1="-4.0625" y1="-43.75" x2="-4.6875" y2="-43.125" width="0.127" layer="21" curve="-90"/>
-<wire x1="-4.6875" y1="-43.125" x2="-4.6875" y2="43.125" width="0.127" layer="21"/>
-<wire x1="-4.6875" y1="43.125" x2="-4.0625" y2="43.75" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4.375" y1="43.593875" x2="4.375" y2="43.593875" width="0.127" layer="21"/>
+<wire x1="4.375" y1="-43.593875" x2="-4.375" y2="-43.593875" width="0.127" layer="21"/>
+<wire x1="-4.375" y1="43.593875" x2="-4.6875" y2="43.281375" width="0.127" layer="21" curve="90"/>
+<wire x1="-4.6875" y1="43.281375" x2="-4.6875" y2="-43.281375" width="0.127" layer="21"/>
+<wire x1="-4.6875" y1="-43.281375" x2="-4.375" y2="-43.593875" width="0.127" layer="21" curve="90"/>
+<wire x1="4.375" y1="-43.593875" x2="4.6875" y2="-43.281375" width="0.127" layer="21" curve="90"/>
+<wire x1="4.6875" y1="-43.281375" x2="4.6875" y2="43.281375" width="0.127" layer="21"/>
+<wire x1="4.6875" y1="43.281375" x2="4.375" y2="43.593875" width="0.127" layer="21" curve="90"/>
 </package>
 <package name="PIC16F630">
 <wire x1="4.064" y1="1.9558" x2="-4.064" y2="1.9558" width="0.1524" layer="51"/>

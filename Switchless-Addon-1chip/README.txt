@@ -6,7 +6,7 @@ Solder Joints:
 
 -----------------------------------------------------------------------------------
 
-Values of passive components (all 0805 packages):
+Values of passive components (all 0805 packages except crystals):
 
 R1, R2: 330Ohm
 R3, R4: 1MOhm

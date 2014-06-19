@@ -12,7 +12,7 @@ installation guide 'classical' mod: http://retrorgb.com/1chiprgb.html
 
 Values of passive components (all 0805 packages):
 
-R1 - R3: 100Ohm (75Ohm is also possible and gives a brighter image)
+R1 - R3: 75Ohm (100Ohm is also possible and gives a darker image but is a bit dirty; use resitors at the input instead)
 C1     : 0.1uF
 
 -----------------------------------------------------------------------------------
