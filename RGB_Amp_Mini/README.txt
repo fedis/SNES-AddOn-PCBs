@@ -7,7 +7,7 @@ Solder Joints:
 
 solder PCB directly beneath the MultiAV
 deactivate the RGB-output of S-RGB by lifting pin20, 22 and 24 from mainboard if use a SNS-CPU-1Chip-03!
-installation guide 'classical' mod: http://retrorgb.com/snesminirgb.html
+installation guide: http://retrorgb.com/snesminirgb.html
 
 -----------------------------------------------------------------------------------
 

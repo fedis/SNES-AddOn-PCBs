@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -90,28 +90,6 @@
 <rectangle x1="0.381" y1="1.9812" x2="0.889" y2="3.1242" layer="51"/>
 <rectangle x1="-0.889" y1="1.9812" x2="-0.381" y2="3.1242" layer="51"/>
 </package>
-<package name="SNES_MULTIAV">
-<pad name="P$1" x="6.35" y="-1.27" drill="1" shape="square" rot="R270"/>
-<pad name="P$2" x="6.35" y="1.27" drill="1" rot="R270"/>
-<pad name="P$3" x="3.81" y="-1.27" drill="1" rot="R270"/>
-<pad name="P$4" x="3.81" y="1.27" drill="1" rot="R270"/>
-<pad name="P$5" x="1.27" y="-1.27" drill="1" rot="R270"/>
-<pad name="P$6" x="1.27" y="1.27" drill="1" rot="R270"/>
-<pad name="P$7" x="-1.27" y="-1.27" drill="1" rot="R270"/>
-<pad name="P$8" x="-1.27" y="1.27" drill="1" rot="R270"/>
-<pad name="P$9" x="-3.81" y="-1.27" drill="1" rot="R270"/>
-<pad name="P$10" x="-3.81" y="1.27" drill="1" rot="R270"/>
-<pad name="P$11" x="-6.35" y="-1.27" drill="1"/>
-<pad name="P$12" x="-6.35" y="1.27" drill="1"/>
-<wire x1="-6.35" y1="2.2225" x2="6.35" y2="2.2225" width="0.127" layer="21"/>
-<wire x1="6.35" y1="2.2225" x2="7.3025" y2="1.27" width="0.127" layer="21" curve="-90"/>
-<wire x1="7.3025" y1="1.27" x2="7.3025" y2="-1.905" width="0.127" layer="21"/>
-<wire x1="7.3025" y1="-1.905" x2="6.985" y2="-2.2225" width="0.127" layer="21" curve="-90"/>
-<wire x1="6.985" y1="-2.2225" x2="-6.35" y2="-2.2225" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-2.2225" x2="-7.3025" y2="-1.27" width="0.127" layer="21" curve="-90"/>
-<wire x1="-7.3025" y1="-1.27" x2="-7.3025" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-7.3025" y1="1.27" x2="-6.35" y2="2.2225" width="0.127" layer="21" curve="-90"/>
-</package>
 <package name="Z0805">
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
@@ -143,24 +121,6 @@
 <symbol name="PWR">
 <pin name="VCC" x="0" y="12.7" length="middle" rot="R270"/>
 <pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
-</symbol>
-<symbol name="SNES_MULTIAV">
-<pin name="RED" x="-10.16" y="15.24" length="middle"/>
-<pin name="GREEN" x="-10.16" y="12.7" length="middle"/>
-<pin name="/CS" x="-10.16" y="7.62" length="middle"/>
-<pin name="BLUE" x="-10.16" y="10.16" length="middle"/>
-<pin name="Y-SV" x="-10.16" y="2.54" length="middle"/>
-<pin name="C-SV" x="-10.16" y="0" length="middle"/>
-<pin name="CV" x="-10.16" y="-5.08" length="middle"/>
-<pin name="AUDIO-L" x="-10.16" y="-10.16" length="middle"/>
-<pin name="AUDIO-R" x="-10.16" y="-12.7" length="middle"/>
-<wire x1="-5.08" y1="17.78" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="17.78" width="0.254" layer="94"/>
-<wire x1="7.62" y1="17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
-</symbol>
-<symbol name="PWR_MULTIAV_GND">
-<pin name="GND" x="0" y="-5.08" length="middle" rot="R90"/>
 </symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
@@ -200,34 +160,6 @@
 <connect gate="G$1" pin="CO3" pad="6"/>
 <connect gate="G$2" pin="GND" pad="5"/>
 <connect gate="G$2" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SNES_MULTIAV">
-<gates>
-<gate name="G$1" symbol="SNES_MULTIAV" x="0" y="0"/>
-<gate name="G$2" symbol="PWR" x="17.78" y="2.54"/>
-<gate name="G$3" symbol="PWR_MULTIAV_GND" x="22.86" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="SNES_MULTIAV">
-<connects>
-<connect gate="G$1" pin="/CS" pad="P$3"/>
-<connect gate="G$1" pin="AUDIO-L" pad="P$11"/>
-<connect gate="G$1" pin="AUDIO-R" pad="P$12"/>
-<connect gate="G$1" pin="BLUE" pad="P$4"/>
-<connect gate="G$1" pin="C-SV" pad="P$8"/>
-<connect gate="G$1" pin="CV" pad="P$9"/>
-<connect gate="G$1" pin="GREEN" pad="P$2"/>
-<connect gate="G$1" pin="RED" pad="P$1"/>
-<connect gate="G$1" pin="Y-SV" pad="P$7"/>
-<connect gate="G$2" pin="GND" pad="P$5"/>
-<connect gate="G$2" pin="VCC" pad="P$10"/>
-<connect gate="G$3" pin="GND" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -360,6 +292,76 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="snes_div">
+<packages>
+<package name="SNES_MULTIAV_RGBC_ONLY">
+<pad name="P$1" x="6.35" y="-1.27" drill="1" shape="square" rot="R270"/>
+<pad name="P$2" x="6.35" y="1.27" drill="1" rot="R270"/>
+<pad name="P$3" x="3.81" y="-1.27" drill="1" rot="R270"/>
+<pad name="P$4" x="3.81" y="1.27" drill="1" rot="R270"/>
+<pad name="P$5" x="1.27" y="-1.27" drill="1" rot="R270"/>
+<pad name="P$6" x="1.27" y="1.27" drill="1" rot="R270"/>
+<pad name="P$10" x="-3.81" y="1.27" drill="1" rot="R270"/>
+<wire x1="-6.35" y1="2.2225" x2="6.35" y2="2.2225" width="0.127" layer="21"/>
+<wire x1="6.35" y1="2.2225" x2="7.3025" y2="1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="7.3025" y1="1.27" x2="7.3025" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="7.3025" y1="-1.905" x2="6.985" y2="-2.2225" width="0.127" layer="21" curve="-90"/>
+<wire x1="6.985" y1="-2.2225" x2="-6.35" y2="-2.2225" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-2.2225" x2="-7.3025" y2="-1.27" width="0.127" layer="21" curve="-90"/>
+<wire x1="-7.3025" y1="-1.27" x2="-7.3025" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-7.3025" y1="1.27" x2="-6.35" y2="2.2225" width="0.127" layer="21" curve="-90"/>
+<hole x="-1.27" y="-1.27" drill="1"/>
+<hole x="-1.27" y="1.27" drill="1"/>
+<hole x="-3.81" y="-1.27" drill="1"/>
+<hole x="-6.35" y="-1.27" drill="1"/>
+<hole x="-6.35" y="1.27" drill="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SNES_MULTIAV_RGBC_ONLY">
+<pin name="RED" x="-10.16" y="2.54" length="middle"/>
+<pin name="GREEN" x="-10.16" y="0" length="middle"/>
+<pin name="/CS" x="-10.16" y="-5.08" length="middle"/>
+<pin name="BLUE" x="-10.16" y="-2.54" length="middle"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PWR_MULTIAV_GND">
+<pin name="GND" x="0" y="-5.08" length="middle" rot="R90"/>
+</symbol>
+<symbol name="PWR">
+<pin name="VCC" x="0" y="12.7" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SNES_MULTIAV_RGBC_ONLY">
+<gates>
+<gate name="G$1" symbol="SNES_MULTIAV_RGBC_ONLY" x="0" y="0"/>
+<gate name="G$2" symbol="PWR_MULTIAV_GND" x="10.16" y="-7.62"/>
+<gate name="G$3" symbol="PWR" x="15.24" y="0"/>
+</gates>
+<devices>
+<device name="" package="SNES_MULTIAV_RGBC_ONLY">
+<connects>
+<connect gate="G$1" pin="/CS" pad="P$3"/>
+<connect gate="G$1" pin="BLUE" pad="P$4"/>
+<connect gate="G$1" pin="GREEN" pad="P$2"/>
+<connect gate="G$1" pin="RED" pad="P$1"/>
+<connect gate="G$2" pin="GND" pad="P$5"/>
+<connect gate="G$3" pin="GND" pad="P$6"/>
+<connect gate="G$3" pin="VCC" pad="P$10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -371,7 +373,6 @@
 </classes>
 <parts>
 <part name="U$1" library="snescart" deviceset="THS7314" device=""/>
-<part name="U$2" library="snescart" deviceset="SNES_MULTIAV" device=""/>
 <part name="R2" library="snescart" deviceset="R0805" device="" value="100"/>
 <part name="R3" library="snescart" deviceset="R0805" device="" value="100"/>
 <part name="R1" library="snescart" deviceset="R0805" device="" value="100"/>
@@ -382,6 +383,7 @@
 <part name="G" library="wirepad" deviceset="SMD2" device=""/>
 <part name="B" library="wirepad" deviceset="SMD2" device=""/>
 <part name="CS" library="wirepad" deviceset="SMD2" device=""/>
+<part name="U$3" library="snes_div" deviceset="SNES_MULTIAV_RGBC_ONLY" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -389,13 +391,10 @@
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="-2.54"/>
-<instance part="U$2" gate="G$1" x="53.34" y="-15.24"/>
 <instance part="R2" gate="G$1" x="25.4" y="0"/>
 <instance part="R3" gate="G$1" x="25.4" y="-7.62"/>
 <instance part="R1" gate="G$1" x="25.4" y="-15.24"/>
 <instance part="U$1" gate="G$2" x="-12.7" y="-20.32" rot="R90"/>
-<instance part="U$2" gate="G$2" x="-12.7" y="-22.86" rot="R90"/>
-<instance part="U$2" gate="G$3" x="-5.08" y="-25.4" rot="R90"/>
 <instance part="P+1" gate="VCC" x="-25.4" y="-10.16"/>
 <instance part="GND1" gate="1" x="0" y="-30.48"/>
 <instance part="C1" gate="G$1" x="-12.7" y="-15.24" rot="R90"/>
@@ -403,6 +402,9 @@
 <instance part="G" gate="1" x="-30.48" y="-2.54"/>
 <instance part="B" gate="1" x="-25.4" y="-5.08"/>
 <instance part="CS" gate="1" x="15.24" y="-22.86"/>
+<instance part="U$3" gate="G$1" x="53.34" y="-2.54"/>
+<instance part="U$3" gate="G$2" x="-5.08" y="-25.4" rot="R90"/>
+<instance part="U$3" gate="G$3" x="-12.7" y="-22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -440,8 +442,8 @@
 <wire x1="33.02" y1="-2.54" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="-7.62" x2="30.48" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GREEN"/>
 <wire x1="43.18" y1="-2.54" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GREEN"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -467,46 +469,46 @@
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="-15.24" x2="35.56" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-15.24" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="BLUE"/>
 <wire x1="35.56" y1="-5.08" x2="43.18" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="BLUE"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$3" pin="GND"/>
 <wire x1="0" y1="-27.94" x2="0" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$2" pin="GND"/>
-<wire x1="0" y1="-25.4" x2="0" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="0" y="-25.4"/>
+<pinref part="U$3" gate="G$2" pin="GND"/>
 <pinref part="U$1" gate="G$2" pin="GND"/>
-<wire x1="0" y1="-22.86" x2="0" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="0" y="-22.86"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="0" y1="-15.24" x2="0" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$3" pin="GND"/>
+<wire x1="0" y1="-22.86" x2="0" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="0" y="-20.32"/>
+<wire x1="0" y1="-25.4" x2="0" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="0" y="-25.4"/>
+<junction x="0" y="-22.86"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="U$2" gate="G$2" pin="VCC"/>
 <pinref part="U$1" gate="G$2" pin="VCC"/>
-<wire x1="-25.4" y1="-22.86" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="-25.4" y1="-12.7" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-25.4" y="-20.32"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-15.24" x2="-25.4" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="-15.24" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-25.4" y="-15.24"/>
+<pinref part="U$3" gate="G$3" pin="VCC"/>
+<wire x1="-25.4" y1="-20.32" x2="-25.4" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-20.32"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="RED"/>
 <wire x1="43.18" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="RED"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -514,8 +516,8 @@
 <pinref part="CS" gate="1" pin="P"/>
 <wire x1="17.78" y1="-22.86" x2="38.1" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-22.86" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="/CS"/>
 <wire x1="38.1" y1="-7.62" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="/CS"/>
 </segment>
 </net>
 </nets>

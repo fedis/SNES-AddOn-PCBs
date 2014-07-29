@@ -6,7 +6,7 @@ B - blue image component from S-CPUN pin158
 
 solder PCB directly beneath the MultiAV
 deactivate the RGB-output of S-RGB by lifting pin20, 22 and 24 from mainboard
-installation guide 'classical' mod: http://retrorgb.com/1chiprgb.html
+installation guide: http://retrorgb.com/1chiprgb.html
 
 -----------------------------------------------------------------------------------
 
