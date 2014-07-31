@@ -22,14 +22,12 @@ Lifted Pins:
 - CIC Pins 1, 2, 10 and 11 OR remove CIC completely
 
 -----------------------------------------------------------------------------------
-
-Values of passive components (all 0805 packages except crystals):
+Values of passive components:
 
 R1, R2: 220Ohm (increase resistor values if LED is too bright)
 C1 - C5: 0.1uF
 
 -----------------------------------------------------------------------------------
-
 Active ICs (SOIC14 packages if not otherwise stated):
 
 74*04: six inverter gates, where three are unused
@@ -38,5 +36,7 @@ Active ICs (SOIC14 packages if not otherwise stated):
 
 S-CIC: PIC16F630 flashed with 'Firmware_SCIC.hex' or 'supercic-lock.hex' (sd2snes-repo)
 uIGR (V2): PIC16F630 flashed with 'Firmware_uIGR_V2.hex' or 'snes-uigr.hex' (sd2snes-repo)
+           One may also use the current beta Firmware available for PIC16F630 and PIC16F684 as well.
+           The last mentioned one should work best. 
 !!!Note that the 'snes-igr.hex' in the sd2snes repository, i.e., the 'classical igr' won't work
 on this PCB!!!
