@@ -1,5 +1,3 @@
-!!! THIS IS AN UNTESTED VERSION OF THE PCB!!!
-
 The aim of the new version is to get rid of the 74*133 of the previous version, because the 74*133 is hard to find or very expensive...
 
 Solder Joints:
